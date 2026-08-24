@@ -65,7 +65,7 @@ export function RecruiterDashboard({ initialRecruiters, initialSettings }: Props
   return <div className="app-shell">
     <header className="topbar">
       <div><div className="eyebrow light">EXECUTIVE SEARCH WORKSPACE</div><h1>Recruiter Command Center</h1><p>Research → prioritize → draft → approve → track.</p></div>
-      <div className="top-actions"><Link href="/import" className="button inverse">Import starter data</Link><button className="button inverse" onClick={signOut}>Sign out</button></div>
+      <div className="top-actions"><Link href="/network" className="button inverse">LinkedIn network</Link><Link href="/import" className="button inverse">Import starter data</Link><button className="button inverse" onClick={signOut}>Sign out</button></div>
       <div className="kpi-grid">
         <Kpi n={kpis.total} label="Recruiters"/><Kpi n={kpis.high} label="High fit 80+"/><Kpi n={kpis.ready} label="Ready"/><Kpi n={kpis.active} label="Active"/><Kpi n={kpis.approved} label="Approved"/>
       </div>
